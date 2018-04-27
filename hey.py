@@ -1,9 +1,10 @@
+#!/usr/bin/python3
 from flask import Flask, make_response, request
 from flask import render_template
 import os
 
 ########################
-datadir_path = '/home/pi/dsunix_data'
+datadir_path = '/home/jack/Documents/flaskdsunix'
 
 ########################
 dirlist = os.listdir(datadir_path)
@@ -30,6 +31,8 @@ def simple():
         from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
         from matplotlib.figure import Figure
         from matplotlib.dates import DateFormatter
+
+
         fig = Figure()
 
         plt=fig.add_subplot(111)
